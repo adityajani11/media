@@ -1,0 +1,70 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: conic-gradient(#80ccff, #5f5f5f, #7a7fad, #80ccff);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Animated ring around logo */
+.logo-ring {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #707174, #243b55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 5s linear infinite;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media icons or text */
+.logo-text {
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+/* Spinning and color shift animations */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.media-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.media-title {
+    font-size: 1.50rem;
+    font-weight: 700;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+video,
+audio {
+    width: 100%;
+    border-radius: 10px;
+}
